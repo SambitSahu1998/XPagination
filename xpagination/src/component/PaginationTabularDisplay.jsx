@@ -27,14 +27,14 @@ const PaginationTabularDisplay = ({ data }) => {
       <h2>Employee Data Table</h2>
       <div className={styles.tableContainer}>
         <table className={styles.table}>
-          <tbody className={styles.header}>
+          <thead className={styles.header}>
             <tr>
-              <td>ID</td>
-              <td>Name</td>
-              <td>Email</td>
-              <td>Role</td>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Role</th>
             </tr>
-          </tbody>
+          </thead>
           <tbody>
             {tableData.map((employee) => (
               <tr key={employee.id}>

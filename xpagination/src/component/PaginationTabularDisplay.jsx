@@ -4,9 +4,15 @@ import styles from "../module/PaginationTabularDisplay.module.css";
 const PaginationTabularDisplay = ({ data }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const onNextClick = () => {
+    if(currentPage === 1){
+      return;
+    }
     setCurrentPage(currentPage + 1);
   };
   const onPreviousClick = () => {
+    if(endIndex >= data.length){
+      return;
+    }
     setCurrentPage(currentPage - 1);
   };
 
@@ -42,7 +48,6 @@ const PaginationTabularDisplay = ({ data }) => {
         <button
           className={styles.button}
           onClick={onPreviousClick}
-          disabled={currentPage === 1}
         >
           Previous
         </button>
@@ -50,7 +55,6 @@ const PaginationTabularDisplay = ({ data }) => {
         <button
           className={styles.button}
           onClick={onNextClick}
-          disabled={endIndex >= data.length}
         >
           Next
         </button>

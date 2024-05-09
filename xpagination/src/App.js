@@ -21,7 +21,7 @@ const App = () => {
 
   return (
     <React.Fragment>
-      <PaginationTabularDisplay data={data}/>
+      {data.length > 0 && <PaginationTabularDisplay data={data}/>}
     </React.Fragment>
   );
 }

@@ -1,0 +1,60 @@
+.paginationTabularDisplay {
+    width: 100%;
+    text-align: center;
+}
+
+.tableContainer{
+    padding-left:20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.table {
+    box-shadow: 0 0 7px #333333;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+
+.header {
+    background-color: rgb(15, 211, 149);
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.button {
+    background-color: rgb(15, 211, 149);
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.currentPage {
+    background-color: rgb(15, 211, 149);
+    color: #FFFFFF;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+.buttonContainer{
+    text-align: center;
+    padding:30px;
+}
+
+
+.table tbody tr td {
+    padding: 10px 10px;
+    border-bottom: 3px solid rgb(196, 190, 190);
+}

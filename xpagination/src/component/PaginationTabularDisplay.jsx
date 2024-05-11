@@ -6,7 +6,6 @@ const PaginationTabularDisplay = ({ data }) => {
   const [tableData, setTableData] = useState([]);
   
   useEffect(() => {
-    // Update tableData when data or currentPage changes
     const startIndex = (currentPage - 1) * 10;
     const endIndex = Math.min(startIndex + 10, data.length);
     setTableData(data.slice(startIndex, endIndex));
